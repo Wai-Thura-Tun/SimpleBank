@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-Tx-vyQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank_logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qtx-Tx-vyQ">
                                 <rect key="frame" x="121.66666666666669" y="351" width="150" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="Xkh-Ky-SUi"/>
@@ -31,6 +31,9 @@
                             <constraint firstItem="Qtx-Tx-vyQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="wSX-F9-wFS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="logoImageView" destination="Qtx-Tx-vyQ" id="qDn-nq-lH5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +41,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bank" width="800" height="533"/>
+        <image name="bank_logo" width="2585" height="2585"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

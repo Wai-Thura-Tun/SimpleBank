@@ -9,21 +9,33 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var depositeBtn: UIButton!
+    @IBOutlet weak var withdrawBtn: UIButton!
+    @IBOutlet weak var transferBtn: UIButton!
+    @IBOutlet weak var historyBtn: UIButton!
+    @IBOutlet weak var createUserBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        updateUI()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateUI() {
+        updateButtonView(depositeBtn)
+        updateButtonView(withdrawBtn)
+        updateButtonView(transferBtn)
+        updateButtonView(historyBtn)
+        updateButtonView(createUserBtn)
     }
-    */
+    
+    func updateButtonView(_ sender: UIButton) {
+        sender.layer.cornerRadius = sender.bounds.width / 12
+        sender.layer.shadowColor = UIColor.gray.cgColor
+        sender.layer.shadowOffset = CGSize(width: 0, height: 10)
+        sender.layer.shadowOpacity = 0.7
+        sender.layer.shadowRadius = 10
+        sender.layer.shadowPath = nil
+    }
 
 }
