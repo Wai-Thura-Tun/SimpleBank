@@ -37,5 +37,24 @@ class HomeViewController: UIViewController {
         sender.layer.shadowRadius = 10
         sender.layer.shadowPath = nil
     }
-
+    
+    @IBAction func clickDeposite(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func clickWithdraw(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func clickTransfer(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func clickHistory(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func clickCreateUser(_ sender: UIButton) {
+        
+    }
 }

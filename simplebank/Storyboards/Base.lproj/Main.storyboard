@@ -47,6 +47,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickDeposite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7t5-qG-Kph"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nxu-zS-s9W">
                                                 <rect key="frame" x="180.66666666666663" y="0.0" width="152.33333333333337" height="102.33333333333333"/>
@@ -56,6 +59,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickWithdraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icx-ef-b5f"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -73,6 +79,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickTransfer:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p16-AF-09q"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB2-YR-beg">
                                                 <rect key="frame" x="180.66666666666663" y="0.0" width="152.33333333333337" height="102"/>
@@ -82,6 +91,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f4-mU-2S0"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -99,6 +111,9 @@
                                                     <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                                     <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="clickCreateUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kPO-G0-0Qu"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
