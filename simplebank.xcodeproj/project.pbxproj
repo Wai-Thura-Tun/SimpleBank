@@ -15,6 +15,9 @@
 		06B51EB22A9F94AE00257396 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAE2A9F94AE00257396 /* SQLTable.swift */; };
 		06B51EB32A9F94AE00257396 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAF2A9F94AE00257396 /* SQLiteDB.swift */; };
 		06B51EB42A9F94AE00257396 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB02A9F94AE00257396 /* SQLiteBase.swift */; };
+		06B51EB62A9F975D00257396 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB52A9F975D00257396 /* Bank.swift */; };
+		06B51EB82A9F976300257396 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB72A9F976300257396 /* Account.swift */; };
+		06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB92A9F976B00257396 /* DBManager.swift */; };
 		06CF4A2B2A9908C500F78141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2A2A9908C500F78141 /* AppDelegate.swift */; };
 		06CF4A2D2A9908C500F78141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2C2A9908C500F78141 /* SceneDelegate.swift */; };
 		06CF4A2F2A9908C500F78141 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2E2A9908C500F78141 /* LoginViewController.swift */; };
@@ -40,6 +43,9 @@
 		06B51EAE2A9F94AE00257396 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		06B51EAF2A9F94AE00257396 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		06B51EB02A9F94AE00257396 /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
+		06B51EB52A9F975D00257396 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
+		06B51EB72A9F976300257396 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		06B51EB92A9F976B00257396 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		06CF4A272A9908C500F78141 /* simplebank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplebank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CF4A2A2A9908C500F78141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CF4A2C2A9908C500F78141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +222,9 @@
 		06CF4A402A99112600F78141 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06B51EB52A9F975D00257396 /* Bank.swift */,
+				06B51EB72A9F976300257396 /* Account.swift */,
+				06B51EB92A9F976B00257396 /* DBManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -293,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */,
+				06B51EB62A9F975D00257396 /* Bank.swift in Sources */,
 				06B51EB42A9F94AE00257396 /* SQLiteBase.swift in Sources */,
 				06CF4A462A99125600F78141 /* DepositeViewController.swift in Sources */,
 				06CF4A4A2A99126A00F78141 /* TransferViewController.swift in Sources */,
@@ -302,7 +312,9 @@
 				06CF4A2B2A9908C500F78141 /* AppDelegate.swift in Sources */,
 				06CF4A4C2A99128C00F78141 /* CreateAccountViewController.swift in Sources */,
 				06CF4A2D2A9908C500F78141 /* SceneDelegate.swift in Sources */,
+				06B51EB82A9F976300257396 /* Account.swift in Sources */,
 				06CF4A4E2A99129500F78141 /* HistoryViewController.swift in Sources */,
+				06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */,
 				06CF4A482A99126100F78141 /* WithdrawViewController.swift in Sources */,
 				06CF4A442A99123900F78141 /* HomeViewController.swift in Sources */,
 				06B51EB22A9F94AE00257396 /* SQLTable.swift in Sources */,
