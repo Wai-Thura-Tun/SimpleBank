@@ -21,7 +21,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login(_ sender: UIButton) {
-        checkValidation()
+        if checkValidation() {
+            goToHome()
+        }
     }
     
     func updateUI() {

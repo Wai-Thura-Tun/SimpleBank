@@ -139,9 +139,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="bAX-YI-edA"/>
                     <connections>
+                        <outlet property="amountLabel" destination="ghZ-hs-tdK" id="VFE-Pa-H8P"/>
                         <outlet property="createUserBtn" destination="Wnu-HJ-dpm" id="FB1-GK-RcG"/>
                         <outlet property="depositeBtn" destination="13F-WI-FD6" id="LCv-Zy-QGd"/>
                         <outlet property="historyBtn" destination="YB2-YR-beg" id="SEl-HG-SRr"/>
+                        <outlet property="nameLabel" destination="3jg-80-xxf" id="PcG-k3-PAD"/>
                         <outlet property="transferBtn" destination="7CR-Xc-WWw" id="9tt-Pt-hOA"/>
                         <outlet property="withdrawBtn" destination="nxu-zS-s9W" id="Cfe-ak-OCy"/>
                         <segue destination="Cg6-SK-dkW" kind="show" identifier="depositesegue" id="X2v-2i-b9s"/>

@@ -47,7 +47,7 @@ class DBManager {
     
     // Login user
     func login(username: String, password: String) -> [String:Any]? {
-        let sql = "SELECT id,username FROM users WHERE username = '\(username)' AND password = '\(password)'"
+        let sql = "SELECT * FROM users WHERE username = '\(username)' AND password = '\(password)'"
         let result = _db.query(sql: sql)
         if result.count == 1 {
             let user = result.first!

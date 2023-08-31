@@ -25,16 +25,18 @@ extension LoginViewController: UITextFieldDelegate {
         return true
     }
     
-    func checkValidation() {
+    func checkValidation() -> Bool {
         guard let userName = userNameTextField.text, let password = passwordTextField.text else {
             showAlert("Enter username and password")
-            return
+            return false
         }
         
         guard let userAcc = bank.login(username: userName, password: password) else {
             showAlert("Wrong credentials")
-            return
+            return false
         }
+        Bank.currentAccount = userAcc
+        return true
     }
     
     func showAlert(_ message: String) {

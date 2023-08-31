@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0685913D2A9AE10000C9FF99 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685913B2A9AE10000C9FF99 /* libsqlite3.tbd */; };
 		0685913E2A9AE10000C9FF99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */; };
+		069B27D42AA0D2B900EFE9B4 /* bank_db.db in Resources */ = {isa = PBXBuildFile; fileRef = 069B27D32AA0D2B900EFE9B4 /* bank_db.db */; };
+		069B27D72AA0EB5500EFE9B4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */; };
 		06B51EA92A9F940E00257396 /* LoginViewController+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */; };
 		06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */; };
 		06B51EB12A9F94AE00257396 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAD2A9F94AE00257396 /* CloudDB.swift */; };
@@ -36,6 +38,8 @@
 /* Begin PBXFileReference section */
 		0685913B2A9AE10000C9FF99 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		069B27D32AA0D2B900EFE9B4 /* bank_db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bank_db.db; sourceTree = "<group>"; };
+		069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Routing.swift"; sourceTree = "<group>"; };
 		06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Validation.swift"; sourceTree = "<group>"; };
 		06B51EAC2A9F94AE00257396 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
@@ -83,6 +87,14 @@
 				0685913B2A9AE10000C9FF99 /* libsqlite3.tbd */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		069B27D52AA0EB3B00EFE9B4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		06B51E9E2A9F92DD00257396 /* Thirdparties */ = {
@@ -151,6 +163,7 @@
 		06B51EA52A9F937D00257396 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				069B27D32AA0D2B900EFE9B4 /* bank_db.db */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -191,6 +204,7 @@
 		06CF4A292A9908C500F78141 /* simplebank */ = {
 			isa = PBXGroup;
 			children = (
+				069B27D52AA0EB3B00EFE9B4 /* Extension */,
 				06B51EA52A9F937D00257396 /* Resources */,
 				06B51E9E2A9F92DD00257396 /* Thirdparties */,
 				06CF4A402A99112600F78141 /* Model */,
@@ -291,6 +305,7 @@
 				06CF4A372A9908CB00F78141 /* LaunchScreen.storyboard in Resources */,
 				06CF4A342A9908CB00F78141 /* Assets.xcassets in Resources */,
 				06CF4A322A9908C500F78141 /* Main.storyboard in Resources */,
+				069B27D42AA0D2B900EFE9B4 /* bank_db.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +332,7 @@
 				06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */,
 				06CF4A482A99126100F78141 /* WithdrawViewController.swift in Sources */,
 				06CF4A442A99123900F78141 /* HomeViewController.swift in Sources */,
+				069B27D72AA0EB5500EFE9B4 /* StringExtension.swift in Sources */,
 				06B51EB22A9F94AE00257396 /* SQLTable.swift in Sources */,
 				06B51EB32A9F94AE00257396 /* SQLiteDB.swift in Sources */,
 			);

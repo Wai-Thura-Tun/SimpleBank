@@ -9,6 +9,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var depositeBtn: UIButton!
     @IBOutlet weak var withdrawBtn: UIButton!
     @IBOutlet weak var transferBtn: UIButton!
@@ -27,6 +29,10 @@ class HomeViewController: UIViewController {
         updateButtonView(transferBtn)
         updateButtonView(historyBtn)
         updateButtonView(createUserBtn)
+        if let user = Bank.currentAccount {
+            nameLabel.text = user.userName.captializedName
+            amountLabel.text = String(user.amount)
+        }
     }
     
     func updateButtonView(_ sender: UIButton) {
