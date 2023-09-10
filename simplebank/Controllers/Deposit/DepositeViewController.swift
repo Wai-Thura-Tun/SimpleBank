@@ -7,17 +7,19 @@
 
 import UIKit
 
-class DepositeViewController: UIViewController {
+class DepositeViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var amountTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        amountTextField.delegate = self
     }
 
     @IBAction func confirmDeposite(_ sender: UIButton) {
         
     }
+    
+    
 }

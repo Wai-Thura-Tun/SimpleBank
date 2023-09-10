@@ -11,6 +11,8 @@
 		0685913E2A9AE10000C9FF99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */; };
 		069B27D42AA0D2B900EFE9B4 /* bank_db.db in Resources */ = {isa = PBXBuildFile; fileRef = 069B27D32AA0D2B900EFE9B4 /* bank_db.db */; };
 		069B27D72AA0EB5500EFE9B4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */; };
+		06B174FB2AA7950900B695E3 /* DepositeViewController+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */; };
+		06B174FD2AA7972B00B695E3 /* HomeViewController+ Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */; };
 		06B51EA92A9F940E00257396 /* LoginViewController+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */; };
 		06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */; };
 		06B51EB12A9F94AE00257396 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAD2A9F94AE00257396 /* CloudDB.swift */; };
@@ -40,6 +42,8 @@
 		0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		069B27D32AA0D2B900EFE9B4 /* bank_db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bank_db.db; sourceTree = "<group>"; };
 		069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepositeViewController+Validation.swift"; sourceTree = "<group>"; };
+		06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+ Routing.swift"; sourceTree = "<group>"; };
 		06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Routing.swift"; sourceTree = "<group>"; };
 		06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Validation.swift"; sourceTree = "<group>"; };
 		06B51EAC2A9F94AE00257396 /* bridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bridge.h; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A452A99125600F78141 /* DepositeViewController.swift */,
+				06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */,
 			);
 			path = Deposit;
 			sourceTree = "<group>";
@@ -180,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A432A99123900F78141 /* HomeViewController.swift */,
+				06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -317,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */,
+				06B174FD2AA7972B00B695E3 /* HomeViewController+ Routing.swift in Sources */,
 				06B51EB62A9F975D00257396 /* Bank.swift in Sources */,
 				06B51EB42A9F94AE00257396 /* SQLiteBase.swift in Sources */,
 				06CF4A462A99125600F78141 /* DepositeViewController.swift in Sources */,
@@ -328,6 +335,7 @@
 				06CF4A4C2A99128C00F78141 /* CreateAccountViewController.swift in Sources */,
 				06CF4A2D2A9908C500F78141 /* SceneDelegate.swift in Sources */,
 				06B51EB82A9F976300257396 /* Account.swift in Sources */,
+				06B174FB2AA7950900B695E3 /* DepositeViewController+Validation.swift in Sources */,
 				06CF4A4E2A99129500F78141 /* HistoryViewController.swift in Sources */,
 				06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */,
 				06CF4A482A99126100F78141 /* WithdrawViewController.swift in Sources */,
