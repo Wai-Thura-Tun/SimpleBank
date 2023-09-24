@@ -16,23 +16,41 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var transferBtn: UIButton!
     @IBOutlet weak var historyBtn: UIButton!
     @IBOutlet weak var createUserBtn: UIButton!
+    @IBOutlet weak var infoBtn: UIButton!
+    @IBOutlet weak var blankView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setUp()
         updateUI()
     }
     
-    func updateUI() {
+    override func viewDidAppear(_ animated: Bool) {
+        updateUI()
+    }
+    
+    func setUp() {
         updateButtonView(depositeBtn)
         updateButtonView(withdrawBtn)
         updateButtonView(transferBtn)
         updateButtonView(historyBtn)
         updateButtonView(createUserBtn)
+        updateButtonView(infoBtn)
+    }
+    
+    func updateUI() {
         if let user = Bank.currentAccount {
             nameLabel.text = user.userName.captializedName
+            print(user.amount)
             amountLabel.text = String(user.amount)
+            if user.isAdmin {
+                blankView.isHidden = true
+            }
+            else {
+                createUserBtn.isHidden = true
+            }
         }
+        
     }
     
     func updateButtonView(_ sender: UIButton) {
@@ -45,22 +63,26 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func clickDeposite(_ sender: UIButton) {
-        
+        goToDeposit()
     }
     
     @IBAction func clickWithdraw(_ sender: UIButton) {
-        
+        goToWithdraw()
     }
     
     @IBAction func clickTransfer(_ sender: UIButton) {
-        
+        goToTransfer()
     }
     
     @IBAction func clickHistory(_ sender: UIButton) {
-        
+        goToHistory()
     }
     
     @IBAction func clickCreateUser(_ sender: UIButton) {
-        
+        goToCreateAcc()
+    }
+    
+    @IBAction func clickUserInfo(_ sender: UIButton) {
+        goToUserInfo()
     }
 }

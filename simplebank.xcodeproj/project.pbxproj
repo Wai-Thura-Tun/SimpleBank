@@ -9,9 +9,16 @@
 /* Begin PBXBuildFile section */
 		0685913D2A9AE10000C9FF99 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685913B2A9AE10000C9FF99 /* libsqlite3.tbd */; };
 		0685913E2A9AE10000C9FF99 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */; };
+		068879332AB3D880007A4A64 /* TransactionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068879322AB3D880007A4A64 /* TransactionType.swift */; };
+		068879352AB3D912007A4A64 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 068879342AB3D912007A4A64 /* Transaction.swift */; };
 		069B27D42AA0D2B900EFE9B4 /* bank_db.db in Resources */ = {isa = PBXBuildFile; fileRef = 069B27D32AA0D2B900EFE9B4 /* bank_db.db */; };
 		069B27D72AA0EB5500EFE9B4 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */; };
-		06B174FB2AA7950900B695E3 /* DepositeViewController+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */; };
+		06A03F922ABEC7C500587038 /* WithdrawViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A03F912ABEC7C500587038 /* WithdrawViewController+TextField.swift */; };
+		06A03F942ABECC7E00587038 /* TransferViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A03F932ABECC7E00587038 /* TransferViewController+TextField.swift */; };
+		06A03F962ABED6D300587038 /* CreateAccountViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A03F952ABED6D300587038 /* CreateAccountViewController+TextField.swift */; };
+		06A03F982ABEF5F700587038 /* HistoryViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A03F972ABEF5F700587038 /* HistoryViewController+TableView.swift */; };
+		06A03F9A2ABEF62100587038 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06A03F992ABEF62100587038 /* HistoryTableViewCell.swift */; };
+		06B174FB2AA7950900B695E3 /* DepositeViewController+TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B174FA2AA7950900B695E3 /* DepositeViewController+TextField.swift */; };
 		06B174FD2AA7972B00B695E3 /* HomeViewController+ Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */; };
 		06B51EA92A9F940E00257396 /* LoginViewController+Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */; };
 		06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */; };
@@ -22,6 +29,7 @@
 		06B51EB62A9F975D00257396 /* Bank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB52A9F975D00257396 /* Bank.swift */; };
 		06B51EB82A9F976300257396 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB72A9F976300257396 /* Account.swift */; };
 		06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B51EB92A9F976B00257396 /* DBManager.swift */; };
+		06BB5BDE2AC024730048F5FA /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB5BDD2AC024730048F5FA /* UserInfoViewController.swift */; };
 		06CF4A2B2A9908C500F78141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2A2A9908C500F78141 /* AppDelegate.swift */; };
 		06CF4A2D2A9908C500F78141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2C2A9908C500F78141 /* SceneDelegate.swift */; };
 		06CF4A2F2A9908C500F78141 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06CF4A2E2A9908C500F78141 /* LoginViewController.swift */; };
@@ -40,9 +48,16 @@
 /* Begin PBXFileReference section */
 		0685913B2A9AE10000C9FF99 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		0685913C2A9AE10000C9FF99 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		068879322AB3D880007A4A64 /* TransactionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionType.swift; sourceTree = "<group>"; };
+		068879342AB3D912007A4A64 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		069B27D32AA0D2B900EFE9B4 /* bank_db.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = bank_db.db; sourceTree = "<group>"; };
 		069B27D62AA0EB5500EFE9B4 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepositeViewController+Validation.swift"; sourceTree = "<group>"; };
+		06A03F912ABEC7C500587038 /* WithdrawViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WithdrawViewController+TextField.swift"; sourceTree = "<group>"; };
+		06A03F932ABECC7E00587038 /* TransferViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TransferViewController+TextField.swift"; sourceTree = "<group>"; };
+		06A03F952ABED6D300587038 /* CreateAccountViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreateAccountViewController+TextField.swift"; sourceTree = "<group>"; };
+		06A03F972ABEF5F700587038 /* HistoryViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HistoryViewController+TableView.swift"; sourceTree = "<group>"; };
+		06A03F992ABEF62100587038 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		06B174FA2AA7950900B695E3 /* DepositeViewController+TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DepositeViewController+TextField.swift"; sourceTree = "<group>"; };
 		06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+ Routing.swift"; sourceTree = "<group>"; };
 		06B51EA82A9F940E00257396 /* LoginViewController+Routing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Routing.swift"; sourceTree = "<group>"; };
 		06B51EAA2A9F941B00257396 /* LoginViewController+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoginViewController+Validation.swift"; sourceTree = "<group>"; };
@@ -54,6 +69,7 @@
 		06B51EB52A9F975D00257396 /* Bank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bank.swift; sourceTree = "<group>"; };
 		06B51EB72A9F976300257396 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		06B51EB92A9F976B00257396 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		06BB5BDD2AC024730048F5FA /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		06CF4A272A9908C500F78141 /* simplebank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplebank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06CF4A2A2A9908C500F78141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06CF4A2C2A9908C500F78141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,7 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A452A99125600F78141 /* DepositeViewController.swift */,
-				06B174FA2AA7950900B695E3 /* DepositeViewController+Validation.swift */,
+				06B174FA2AA7950900B695E3 /* DepositeViewController+TextField.swift */,
 			);
 			path = Deposit;
 			sourceTree = "<group>";
@@ -145,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A472A99126100F78141 /* WithdrawViewController.swift */,
+				06A03F912ABEC7C500587038 /* WithdrawViewController+TextField.swift */,
 			);
 			path = Withdraw;
 			sourceTree = "<group>";
@@ -153,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A492A99126A00F78141 /* TransferViewController.swift */,
+				06A03F932ABECC7E00587038 /* TransferViewController+TextField.swift */,
 			);
 			path = Transfer;
 			sourceTree = "<group>";
@@ -161,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A4D2A99129500F78141 /* HistoryViewController.swift */,
+				06A03F972ABEF5F700587038 /* HistoryViewController+TableView.swift */,
+				06A03F992ABEF62100587038 /* HistoryTableViewCell.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -177,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				06CF4A4B2A99128C00F78141 /* CreateAccountViewController.swift */,
+				06A03F952ABED6D300587038 /* CreateAccountViewController+TextField.swift */,
 			);
 			path = CreateAcc;
 			sourceTree = "<group>";
@@ -188,6 +209,14 @@
 				06B174FC2AA7972B00B695E3 /* HomeViewController+ Routing.swift */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		06BB5BDC2AC0245B0048F5FA /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				06BB5BDD2AC024730048F5FA /* UserInfoViewController.swift */,
+			);
+			path = UserInfo;
 			sourceTree = "<group>";
 		};
 		06CF4A1E2A9908C500F78141 = {
@@ -228,6 +257,7 @@
 		06CF4A3E2A99111000F78141 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				06BB5BDC2AC0245B0048F5FA /* UserInfo */,
 				06B51EA72A9F93BC00257396 /* Home */,
 				06B51EA62A9F93B400257396 /* CreateAcc */,
 				06B51EA42A9F935C00257396 /* History */,
@@ -245,6 +275,8 @@
 				06B51EB52A9F975D00257396 /* Bank.swift */,
 				06B51EB72A9F976300257396 /* Account.swift */,
 				06B51EB92A9F976B00257396 /* DBManager.swift */,
+				068879322AB3D880007A4A64 /* TransactionType.swift */,
+				068879342AB3D912007A4A64 /* Transaction.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -277,7 +309,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					06CF4A262A9908C500F78141 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -322,22 +354,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				068879332AB3D880007A4A64 /* TransactionType.swift in Sources */,
 				06B51EAB2A9F941B00257396 /* LoginViewController+Validation.swift in Sources */,
+				06A03F9A2ABEF62100587038 /* HistoryTableViewCell.swift in Sources */,
 				06B174FD2AA7972B00B695E3 /* HomeViewController+ Routing.swift in Sources */,
 				06B51EB62A9F975D00257396 /* Bank.swift in Sources */,
 				06B51EB42A9F94AE00257396 /* SQLiteBase.swift in Sources */,
+				06A03F982ABEF5F700587038 /* HistoryViewController+TableView.swift in Sources */,
+				06A03F942ABECC7E00587038 /* TransferViewController+TextField.swift in Sources */,
 				06CF4A462A99125600F78141 /* DepositeViewController.swift in Sources */,
+				06A03F922ABEC7C500587038 /* WithdrawViewController+TextField.swift in Sources */,
 				06CF4A4A2A99126A00F78141 /* TransferViewController.swift in Sources */,
 				06CF4A2F2A9908C500F78141 /* LoginViewController.swift in Sources */,
 				06B51EA92A9F940E00257396 /* LoginViewController+Routing.swift in Sources */,
 				06B51EB12A9F94AE00257396 /* CloudDB.swift in Sources */,
+				06BB5BDE2AC024730048F5FA /* UserInfoViewController.swift in Sources */,
 				06CF4A2B2A9908C500F78141 /* AppDelegate.swift in Sources */,
 				06CF4A4C2A99128C00F78141 /* CreateAccountViewController.swift in Sources */,
 				06CF4A2D2A9908C500F78141 /* SceneDelegate.swift in Sources */,
 				06B51EB82A9F976300257396 /* Account.swift in Sources */,
-				06B174FB2AA7950900B695E3 /* DepositeViewController+Validation.swift in Sources */,
+				068879352AB3D912007A4A64 /* Transaction.swift in Sources */,
+				06B174FB2AA7950900B695E3 /* DepositeViewController+TextField.swift in Sources */,
 				06CF4A4E2A99129500F78141 /* HistoryViewController.swift in Sources */,
 				06B51EBA2A9F976B00257396 /* DBManager.swift in Sources */,
+				06A03F962ABED6D300587038 /* CreateAccountViewController+TextField.swift in Sources */,
 				06CF4A482A99126100F78141 /* WithdrawViewController.swift in Sources */,
 				06CF4A442A99123900F78141 /* HomeViewController.swift in Sources */,
 				069B27D72AA0EB5500EFE9B4 /* StringExtension.swift in Sources */,
@@ -404,6 +444,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -464,6 +505,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

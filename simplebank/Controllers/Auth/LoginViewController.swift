@@ -13,7 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var logoImageView: UIImageView!
     
-    var bank: Bank = Bank()
+    let bank: Bank = Bank()
     
     override func viewDidLoad() {
         super.viewDidLoad()

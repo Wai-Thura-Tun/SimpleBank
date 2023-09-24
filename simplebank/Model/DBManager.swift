@@ -15,37 +15,38 @@ class DBManager {
       openDB()
     }
     
-    // Open sqlite connection
+    //MARK: - Open connection
     func openDB() {
         _ = _db.open(copyFile: true)
     }
     
-    // Close current sqlite connection
+    //MARK: - Close connection
     func closeDB() {
         _db.closeDB()
     }
     
-    // Withdraw money
-    func withDraw() {
-        
+    //MARK: - Create Transaction
+    func createTransecc(from_id: Int, to_id: Int, amount: Double, transecType: TransactionType) -> Bool {
+        let date = Date().timeIntervalSince1970
+        let sql = "INSERT INTO transec (from_id, to_id, amount, opr, date) VALUES ('\(from_id)', '\(to_id)', '\(amount)', '\(transecType.rawValue)', '\(date)')"
+        let result = _db.execute(sql: sql)
+        return result != 0
     }
     
-    // Deposit money
-    func deposit() {
-        
+    //MARK: - Fetch Transaction
+    func fetchTransec(userId: Int) -> [[String: Any]] {
+        let sql = "SELECT * FROM transec WHERE from_id = '\(userId)' OR to_id = '\(userId)'"
+        let result = _db.query(sql: sql)
+        return result
     }
     
-    // Fetch transcation history
-    func history() {
-        
+    func createAcc(name: String, password: String, isAdmin: Int) -> Bool {
+        let sql = "INSERT INTO users (username, password, is_admin) VALUES ('\(name)','\(password)','\(isAdmin)')"
+        let result = _db.execute(sql: sql)
+        return result != 0
     }
     
-    // Transfer money
-    func transfer() {
-        
-    }
-    
-    // Login user
+    //MARK: - Login
     func login(username: String, password: String) -> [String:Any]? {
         let sql = "SELECT * FROM users WHERE username = '\(username)' AND password = '\(password)'"
         let result = _db.query(sql: sql)

@@ -9,7 +9,6 @@ import Foundation
 
 class Bank {
     static var currentAccount: Account?
-    
     private let _dbManager = DBManager.shared
     private var _isLogin:Bool = false
     
